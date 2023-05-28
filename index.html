@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Readex+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <title>Baarde_FE Test</title>
+</head>
+<body>
+    
+
+ 
+
+<div id="desktop-structure">
+    <div class="topnav">
+      <picture>
+        <source srcset="assets/mobile/coLogo.jpg" media="(max-width:480px)">
+        <source srcset="assets/img/61d6dadcc329e90e7ba797af_Black Logo.svg" media="(max-width:1920px)">
+        <img class=".companyLogo" src="assets/img/61d6dadcc329e90e7ba797af_Black Logo.svg" alt="Image">
+      </picture>
+
+
+      <ul>
+        <li><a href="#">ALL PRODUCTS</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(event)">SOLUTIONS
+              <picture >
+                <img src="assets/img/61dc3933141488d59361259c_DownIco.svg" alt="Image alt text"  width="auto" height="auto">
+              </picture>
+            </a>
+            <div class="dropdown-content" id="myDropdown">
+              <div class="dropdown-left">
+                <ul>
+                  <li>
+                    <div class="circle" onmouseover="addHoverEffect(this)" onmouseout="removeHoverEffect(this)">
+                      <picture>
+                        <source src="assets/img/620bb5cda8f922a8c3697189_Phone Icon.svg" type="image/svg+xml">
+                        <img class="picture-dropdownLeftimg1" src="assets/img/620bb5cda8f922a8c3697189_Phone Icon.svg" alt="Sample Picture"  width="auto" height="auto">
+                      </picture>
+                    </div>
+                    <div class="text">
+                      <a href="#" ><b>Phones</b><br><span style="font-family: 'Inter', serif;">Your day to day life</span></a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="circle" onmouseover="addHoverEffect(this)" onmouseout="removeHoverEffect(this)">
+                      <picture>
+                        <source src="assets/img/620bb5dde6938284e88bc39d_Watch Icon.svg" type="image/svg+xml">
+                        <img class="picture-dropdownLeftimg2" src="assets/img/620bb5dde6938284e88bc39d_Watch Icon.svg" alt="Sample Picture"  width="auto" height="auto">
+                      </picture>
+                    </div>
+                    <div class="text">
+                      <a href="#" style="margin-left: 10px;"><b>Watches</b><br><span style="font-family: 'Inter', serif;">Not Just Stylishtt</span></a>
+                    </div>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <div class="circle" onmouseover="addHoverEffect(this)" onmouseout="removeHoverEffect(this)">
+                      <picture>
+                        <source src="assets/img/620bb5e8ea9557f0f1454e11_Tablet Icon.svg" type="image/svg+xml">
+                        <img class="picture-dropdownLeftimg3" src="assets/img/620bb5e8ea9557f0f1454e11_Tablet Icon.svg" alt="Sample Picture"  width="auto" height="auto">
+                      </picture>
+                    </div>
+                    <div class="text">
+                      <a href="#"><b>Tablets</b><br><span style="font-family: 'Inter', serif;">Empower Your Work</span></a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="circle" onmouseover="addHoverEffect(this)" onmouseout="removeHoverEffect(this)">
+                      <picture>
+                        <source src="assets/img/620bb5f4700036c4cdafdabe_Laptop Icon.svg" type="image/svg+xml">
+                        <img class="picture-dropdownLeftimg4" src="assets/img/620bb5f4700036c4cdafdabe_Laptop Icon.svg" alt="Sample Picture"  width="auto" height="auto">
+                      </picture>
+                    </div>
+                    <div class="text">
+                      <a href="#"><b>Laptops</b><br><span style="font-family: 'Inter', serif;">True Laptop Solution</span></a>
+                    </div>
+                  </li>
+                </ul>
+                <p style="font-family: 'Inter', serif;">Shop headsets and headphones for desktops, laptops, mobile devices, business, education,
+                  working from home, and video calls.</p>
+              </div>
+              <div class="vl"></div>
+              <div class="dropdown-right">
+                <div class="divider">
+                  <picture>
+                    <source src="assets/img/623376b57925d763656caec2_Blog Image.png" type="image/png">
+                    <img class="picture-dropdownRightimg" src="assets/img/623376b57925d763656caec2_Blog Image.png" alt="Sample Picture"  width="auto" height="auto">
+                  </picture>
+                  <p>Editorial</p>
+                  <p>We Make It Easy To Find <br>The Great Design Talent,<br> Easier....</p>
+                  <p>June 15, 2022</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- mobile dropdown -->
+            <div class="dropdown-contentMobile" id="myDropdownMobile">
+              <div class="dropdown-left">
+                <span class="allproductsMobile">All Products</span><br>
+                <span class="solutionsMobile">Solutions</span><picture>
+                  <img src="assets/img/61dc3933141488d59361259c_DownIco.svg" alt="Image alt text"  width="auto" height="auto">
+                </picture>
+                <hr class="hrMobile">
+                <ul>
+                  <li>
+                    <div class="circle" onmouseover="addHoverEffect(this)" onmouseout="removeHoverEffect(this)">
+                      <picture>
+                        <img class="picture-dropdownLeftimg1" src="assets/img/620bb5cda8f922a8c3697189_Phone Icon.svg" alt="Sample Picture"  width="auto" height="auto">
+                      </picture>
+                    </div>
+                    <div class="text">
+                      <a><b>Phones</b><br><span style="font-family: 'Inter', serif;">Your day to day life</span></a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="circle" onmouseover="addHoverEffect(this)" onmouseout="removeHoverEffect(this)">
+                      <picture>
+                        <img class="picture-dropdownLeftimg2" src="assets/img/620bb5dde6938284e88bc39d_Watch Icon.svg" alt="Sample Picture"  width="auto" height="auto">
+                      </picture>
+                    </div>
+                    <div class="text">
+                      <a style="margin-left: 10px;"><b>Watches</b><br><span style="font-family: 'Inter', serif;">Not Just Stylisht</span></a>
+                    </div>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <div class="circle" onmouseover="addHoverEffect(this)" onmouseout="removeHoverEffect(this)">
+                      <picture>
+                        <img class="picture-dropdownLeftimg3" src="assets/img/620bb5e8ea9557f0f1454e11_Tablet Icon.svg" alt="Sample Picture"  width="auto" height="auto">
+                      </picture>
+                    </div>
+                    <div class="text">
+                      <a><b>Tablets</b><br><span style="font-family: 'Inter', serif;">Empower Your Work</span></a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="circle" onmouseover="addHoverEffect(this)" onmouseout="removeHoverEffect(this)">
+                      <picture>
+                        <img class="picture-dropdownLeftimg4" src="assets/img/620bb5f4700036c4cdafdabe_Laptop Icon.svg" alt="Sample Picture"  width="auto" height="auto">
+                      </picture>
+                    </div>
+                    <div class="text">
+                      <a><b>Laptops</b><br><span style="font-family: 'Inter', serif;">True Laptop Solution</span></a>
+                    </div>
+                  </li>
+                </ul>
+                <p style="font-family: 'Inter', serif;">Shop headsets and headphones for desktops, laptops, mobile devices, business, education,
+                  working from home, and video calls.</p>
+                  
+                <span class="aboutMobile">ABOUT</span><br>
+                <span class="supportMobile">SUPPORT</span>
+                
+                
+              </div>
+            </div>
+
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">SUPPORT</a></li>
+          </li>
+      </ul>
+      <picture>
+        <div class="Icons">
+        <img class="chartIcon" src="assets/img/61d6dadc187c4a394032da6e_Search Icon.svg" alt="Image alt text"  width="auto" height="auto">
+
+        <img class="cart" src="assets/img/61d6dadca9325d5d417e54a5_Chart Icon.svg" alt="Image alt text"  width="auto" height="auto">
+        
+        <a class="dropdown-toggleMobile" onclick="toggleDropdownMobile(event)">
+          <img class="hamburger" src="assets/img/620f6ac93f4e724731e88693_Nav Menu Button.svg" alt="Image alt text" width="auto" height="auto">
+        </a>
+        
+      </picture>
+    </div>
+      </div>
+
+<div class="background-color-1">
+  <div id="container">
+        <div class="slideshow-container">
+          <div class="mySlides fade-1">
+            <div class="leftText1">
+              <h1>The new phones are here take a look.</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Scelerisque in est dui, aliquam tempor. Faucibus morbi turpis.</p>
+              <button class="btnExplore1">Explore</button>
+            </div>
+            <div class="rightImage1">
+              <picture>
+                <source srcset="assets/mobile/1.png" media="(max-width:480px)">
+                <source srcset="assets/img/62337475ffd581b880e01bd8_First Slide Image (2).png" media="(max-width:1920px)">
+                <img src="assets/img/62337475ffd581b880e01bd8_First Slide Image (2).png" alt="Image">
+              </picture>
+              
+            </div>
+          </div>
+        
+          <div class="mySlides fade-2">
+            <div class="leftText2">
+              <h1>The iPad just got a new purpose!</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Scelerisque in est dui, aliquam tempor. Faucibus morbi turpis.</p>
+              <button class="btnExplore2">Explore</button>
+            </div>
+            <div class="rightImage2">
+              <picture>
+                <source srcset="assets/mobile/2.png" media="(max-width:480px)">
+                <source srcset="assets/img/6233747209556434ae5957c3_Second Slide (2) (1).png" media="(max-width:1920px)">
+                <img src="assets/img/6233747209556434ae5957c3_Second Slide (2) (1).png" alt="Image">
+              </picture>
+            </div>
+          </div>
+        
+          <div class="mySlides fade-3">
+            <div class="leftText3">
+              <h1>Your Pro setup just got better.</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Scelerisque in est dui, aliquam tempor. Faucibus morbi turpis.</p>
+              <button class="btnExplore3">Explore</button>
+            </div>
+            <div class="rightImage3">
+              <picture>
+                <source srcset="assets/mobile/3.png" media="(max-width:480px)">
+                <source srcset="assets/img/62337475ffd581b880e01bd8_First Slide Image (2).png" media="(max-width:1920px)">
+                <img src="assets/img/62337473ecc98aeb5c540994_Third Slide (2) (1).png" alt="Image">
+              </picture>
+            </div>
+          </div>        
+          <a class="prev" onclick="plusSlides(-1)">
+              <picture>
+                  <source src="assets/img/61f017318697c337726355c5_Left Arrow Icon.svg" type="image/svg+xml">
+                  <img src="assets/img/61f017318697c337726355c5_Left Arrow Icon.svg" alt="Image alt text"  width="auto" height="auto">
+              </picture>
+          </a>
+          <a class="next" onclick="plusSlides(1)">
+              <picture>
+                  <source src="assets/img/61f01975c37c7b2a617a193e_Right Arrow Icon.svg" type="image/svg+xml">
+                  <img src="assets/img/61f01975c37c7b2a617a193e_Right Arrow Icon.svg" alt="Image alt text"  width="auto" height="auto">
+              </picture>
+          </a>
+
+          <div class="slide-indicators">
+            <span class="line" onclick="currentSlide(1)"></span> 
+            <span class="line" onclick="currentSlide(2)"></span> 
+            <span class="line" onclick="currentSlide(3)"></span> 
+          </div>
+          
+          </div>
+          <br>
+          <div id="load-on-scroll-1" class="centered-1 load-on-scroll nonVisible">
+            <h1>Shop our latest offers and categories</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing<br class="brMobile"> elit. Scelerisque in est dui, aliquam, tempor.
+              <br class="brCentered">Faucibus  morbi turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+
+         
+            <div id="load-on-scroll-2" class="Items load-on-scroll nonVisible">
+              <div class="itemDiv1"> 
+                <picture>
+                  <source srcset="assets/img/laptop-removebg-preview.png" type="image/png">
+                  <img class="imgItem1" src="assets/img/laptop-removebg-preview.png" alt="Image"  width="auto" height="auto">
+                </picture>
+                <div class="textWrapper">
+                  <div class="textContainer1">
+                  <span class="nonBoldText">Laptops</span>
+                  <span class="boldText">True Laptop <br>Solution</span>
+                  </div>
+                </div>
+              </div>
+              <div class="itemDiv2"> 
+                <picture>
+                  <source srcset="assets/img/watch-removebg-preview.png" type="image/png">
+                  <img class="imgItem2" src="assets/img/watch-removebg-preview.png" alt="Image"  width="auto" height="auto">
+                </picture>
+                <div class="textWrapper">
+                  <div class="textContainer2">
+                  <span class="nonBoldText">Watch</span>
+                  <span class="boldText">Not Just Stylishtt</span>
+                  </div>
+                </div>
+              </div>
+              <div class="itemDiv3"> 
+                <picture>
+                  <source srcset="assets/img/phone-removebg-preview.png" type="image/png">
+                  <img class="imgItem3" src="assets/img/phone-removebg-preview.png" alt="Image"  width="auto" height="auto">
+                </picture><br>
+                <div class="textWrapper">
+                  <div class="textContainer3">
+                  <span class="nonBoldText">Phones</span>
+                  <span class="boldText">Your day to day <br class="brDesktop">life</span>
+                  </div>
+                </div>
+              </div>
+              <div class="itemDiv4"> 
+                <picture>
+                  <source srcset="assets/img/tab-removebg-preview.png" type="image/png">
+                  <img class="imgItem4" src="assets/img/tab-removebg-preview.png" alt="Image"  width="auto" height="auto">
+                </picture>
+                <div class="textWrapper">
+                  <div class="textContainer4">
+                  <span class="nonBoldText">Tablet</span>
+                  <span class="boldText">Empower your <br class="brDesktop">work</span>
+                  </div>
+                </div>
+                </div>
+            
+              </div>
+
+          <div id="load-on-scroll-3" class="centered-2 load-on-scroll nonVisible">
+            <h1>Save on our most selled items.</h1>
+            <p>Our new Limited Edition Winter Design BESPOKE 4-<br class="brMobile">Door Flextu&trade;</p>
+          </div>
+
+          <div id="load-on-scroll-4" class="mostselledItems load-on-scroll nonVisible">
+            <div class="mostselledItem1">
+              <div class="mostselledItem-imgWrapper"> 
+              <picture>
+                <source srcset="assets/img/62028b0600efe2383e89ce48_Mac Book 4.png" type="image/png">
+                <img class="mostselled-imgItem1" src="assets/img/62028b0600efe2383e89ce48_Mac Book 4.png" alt="Image"  width="auto" height="auto">
+              </picture>
+              </div>
+              <div class="mostselled-textWrapper">
+                <div class="mostselled-textContainer1">
+                <h1 class="mostselled-boldText">MacBook Pro 13</h1><br>
+                <span class="mostselled-nonBoldText">Neque porro quisquam est qui dolorem ipsum
+                  quia dolor sit amet</span><br><br><br>
+                <span style="font-family: 'Readex Pro', serif;">$ 1,200.00 USD</span>
+                </div>
+              </div>
+            </div>
+            <div class="mostselledItem2">
+              <div class="mostselledItem-imgWrapper">  
+              <picture>
+                <source srcset="assets/img/62382e4ee6bfcb408440a226_Smart Galaxy Black Watch.png" type="image/png">
+                <img class="mostselled-imgItem2" src="assets/img/62382e4ee6bfcb408440a226_Smart Galaxy Black Watch.png" alt="Image"  width="auto" height="auto">
+              </picture>
+              </div>
+              <div class="mostselled-textWrapper">
+                <div class="mostselled-textContainer2">
+                <h1 class="mostselled-boldText">Smart Galaxy Watch 3</h1><br>
+                <span class="mostselled-nonBoldText">Neque porro quisquam est qui dolorem ipsum
+                  quia dolor Sit amet, consectetur, adipisci velit...</span><br><br>
+                  <span style="font-family: 'Readex Pro', serif;">$ 199.00 USD</span>
+                </div>
+              </div>
+            </div>
+            <div class="mostselledItem3">
+              <div class="mostselledItem-imgWrapper"> 
+              <picture>
+                <source srcset="assets/img/62028b1444136bb9173e9b9d_Mac Book 3.png" type="image/png">
+                <img class="mostselled-imgItem3" src="assets/img/62028b1444136bb9173e9b9d_Mac Book 3.png" alt="Image"  width="auto" height="auto">
+              </picture>
+              </div>
+              <div class="mostselled-textWrapper">
+                <div class="mostselled-textContainer3">
+                <h1 class="mostselled-boldText">MacBook Air M1</h1><br>
+                <span class="mostselled-nonBoldText">Neque porro quisquam est qui dolorem ipsum
+                  quia dolor Sit amet, consectetur, adipisci velit...</span><br><br>
+                <span style="font-family: 'Readex Pro', serif;">$ 1,009.00 USD</span>
+                </div>
+              </div>
+            </div>
+            <div class="mostselledItem4">
+              <div class="mostselledItem-imgWrapper"> 
+              <picture>
+                
+
+                <source srcset="assets/img/61f14c7ad4a814ec84c8e432_Tablet Image 4-min.png" type="image/png" media="(max-width:1920px)">
+
+                <img class="mostselled-imgItem4" src="assets/img/61f14c7ad4a814ec84c8e432_Tablet Image 4-min.png" alt="Image"  width="auto" height="auto">
+              </picture>
+              </div>
+              <div class="mostselled-textWrapper">
+                <div class="mostselled-textContainer4">
+                <h1 class="mostselled-boldText">iPad</h1><br>
+                <span class="mostselled-nonBoldText">Neque porro quisquam est qui dolorem ipsum
+                  quia dolor Sit amet, consectetur, adipisci velit...</span><br><br>
+                  <span style="font-family: 'Readex Pro', serif;">$ 610.00 USD</span>
+              </div>
+              </div>
+            </div>
+            </div> 
+
+
+            </div> 
+          
+      </div>
+
+
+  <div class="container">
+
+
+    <div id="load-on-scroll-5" class="centered-3 load-on-scroll nonVisible">
+      <h1>See the best around here</h1>
+      <p>Our new Limited Edition Winter Design BESPOKE 4-<br class="brMobile">Door Flex&trade;</p>
+    </div>
+
+    
+    <div id="load-on-scroll-6" class="bestaroundItems load-on-scroll nonVisible">
+      <div class="bestaroundItem1">
+        <div class="bestaround-textWrapper">
+          <div class="bestaround-textContainer1">
+          <span class="bestaround-nonBoldText">Smart light bulb pack</span>
+          <h1 class="bestaround-boldText">Latest and gratest</h1>
+          </div>
+        </div>
+        <div class="bestaround-btn">
+          <span>Explore</span>
+        </div>
+        <div class="bestaround-pictureWrapper">
+        <picture>
+          <source srcset="assets/img/620669c2bfc23d4e38a7f1ba_Latest.png" type="image/png">
+          <img class="mostselled-imgItem4" src="assets/img/620669c2bfc23d4e38a7f1ba_Latest.png" alt="Image"  width="auto" height="auto">
+        </picture>
+      </div> 
+      </div>
+      <div class="bestaroundItem2"> 
+        <div class="bestaround-textWrapper">
+          <div class="bestaround-textContainer2">
+          <span class="bestaround-nonBoldText">Smart light bulb pack</span>
+          <h1 class="bestaround-boldText">Best selling</h1>
+          </div>
+        </div>
+        <div class="bestaround-btn">
+          <span>Explore</span>
+        </div>
+        <div class="bestaround-pictureWrapper">
+        <picture>
+          <source srcset="assets/img/6233782a29ea671d428fd9ed_Best Seller.png" type="image/png">
+          <img class="mostselled-imgItem4" src="assets/img/6233782a29ea671d428fd9ed_Best Seller.png" alt="Image"  width="auto" height="auto">
+        </picture>
+      </div>
+      </div>
+      <div class="bestaroundItem3"> 
+        <div class="bestaround-textWrapper">
+          <div class="bestaround-textContainer3">
+          <span class="bestaround-nonBoldText">Smart light bulb pack</h1>
+          <h1 class="bestaround-boldText">Every product</h1>
+          </div>
+        </div> 
+        <div class="bestaround-btn">
+          <span>Explore</span>
+        </div>
+        <div class="bestaround-pictureWrapper">
+        <picture>
+          <source srcset="assets/img/6233794df39c082c8b6cbee0_Every Product.png" type="image/png">
+          <img class="mostselled-imgItem4" src="assets/img/6233794df39c082c8b6cbee0_Every Product.png" alt="Image"  width="auto" height="auto">
+        </picture>
+        </div>
+        </div>
+      </div> 
+
+
+
+  </div>
+
+
+<div class="background-color-1">
+  <div class="container">
+
+    <div id="load-on-scroll-7" class="centered-text4 load-on-scroll nonVisible">
+      <h1>Ideas have a <br class="brMobile"> place here</h1>
+      <p>Our new Limited Edition Winter Design BESPOKE 4-<br class="brMobile">Door Flex&trade;</p>
+    </div>
+    
+<div class="ideasDesktop">
+    <div id="load-on-scroll-8" class="ideasContainer load-on-scroll nonVisible">
+      <div class="ideasImg">
+        <picture>
+          <source srcset="assets/img/620d08005ae7bd10cda7ad66_Blog Image.jpg" type="image/png">
+          <img id="mainImage" class="ideas-img-1" src="assets/img/620d08005ae7bd10cda7ad66_Blog Image.jpg" alt="Image"  width="auto" height="auto">
+        </picture>
+      </div>
+      <div class="ideasTexts">
+        <div id="message1" class="first">We Make It Easy To Find The Great Design Talent, Easier...</div>
+        <div id="message2" class="second">Road Design Handbook For The International Road...</div>
+        <div id="message3" class="third">The Best Kept Secrets About Creative People</div>
+        <div id="message4" class="fourth">We Make It Easy To Find The Great Design Talent, Easier...</div>
+      </div>
+    </div>
+</div>
+
+<div class="ideasMobile">
+  <div class="ideasTextsMobile">
+    <div id="message1" class="first">
+      <div class="ideaText">We Make It Easy To Find The Great Design Talent, Easier...</div>
+      <div class="ideaImgWrapper">
+        <picture>
+          <source srcset="assets/img/61fa4fd439310c3222e142ba_Blog Image 2.png" type="image/jpeg">
+          <img class="ideaImg" src="assets/img/61fa4fd439310c3222e142ba_Blog Image 2.png" alt="Idea 1">
+        </picture>
+      </div>
+    </div>
+    <div id="message2" class="second">
+      <div class="ideaText">Road Design Handbook For The International Road...</div>
+      <div class="ideaImgWrapper">
+        <picture>
+          <source srcset="assets/img/61fa50143a337b6520618374_Blog Image 9.png" type="image/png">
+          <img class="ideaImg" src="assets/img/61fa50143a337b6520618374_Blog Image 9.png" alt="Idea 2">
+        </picture>
+      </div>
+    </div>
+    <div id="message3" class="third">
+      <div class="ideaText">The Best Kept Secrets About Creative People</div>
+      <div class="ideaImgWrapper">
+        <picture>
+          <source srcset="assets/img/61fa503d384336649c7557ac_Blog Image 6.png" type="image/png">
+          <img class="ideaImg" src="assets/img/61fa503d384336649c7557ac_Blog Image 6.png" alt="Idea 3">
+        </picture>
+      </div>
+    </div>
+    <div id="message4" class="fourth">
+      <div class="ideaText">We Make It Easy To Find The Great Design Talent, Easier...</div>
+      <div class="ideaImgWrapper">
+        <picture>
+          <source srcset="assets/img/623376b57925d763656caec2_Blog Image.png" type="image/png">
+          <img class="ideaImg" src="assets/img/623376b57925d763656caec2_Blog Image.png" alt="Idea 4">
+        </picture>
+      </div>
+  </div>
+</div>
+
+
+    <div id="load-on-scroll-9" class="seeall load-on-scroll nonVisible">
+      <span>See All</span>
+        <picture>
+          <source srcset="assets/img/up-right-arrow.png" type="image/png">
+          <img src="assets/img/up-right-arrow.png" alt="Image"  width="auto" height="auto">
+        </picture>
+      
+    </div>
+    
+
+  </div>
+</div>
+</div>
+
+  <div class="container">
+
+    <div id="load-on-scroll-10" class="centered-text5 load-on-scroll nonVisible">
+      <h1>Looking for anything else?</h1>
+    </div>
+
+    <div id="load-on-scroll-11" class="Looking-search load-on-scroll nonVisible">
+      <picture>
+        <img src="assets/img/61d6dadc187c4a394032da6e_Search Icon.svg" alt="Image" width="auto" height="auto" class="search-icon">
+      </picture>
+      <input type="text" pattern="^[^\r\n]+$" placeholder="Search keyword" class="search-input" id="searchInput">
+    </div>
+
+    <div id="load-on-scroll-12" class="Looking-devices load-on-scroll nonVisible ">
+      <span>iPhone</span>
+      <span>Charger</span>
+      <span>Gift</span><br class="brMobile">
+      <span>Google Pixel 3</span>
+      <span>Keyboard</span><br class="brMobile">
+      <span>13 Pro Max</span><br class="brDesktop">
+      <span>iPhone 12</span>
+      <span>Laptop</span><br class="brMobile">
+      <span>Mobile</span>
+    </div>
+
+
+    <div id="load-on-scroll-13" class="nevermiss load-on-scroll nonVisible">
+      <div class="nevermiss-wrapper">
+        <h1>Never miss a thing</h1>
+        <p>Sign up for texts to be notified about our best offers on the perfect gifts</p>
+        <picture>
+          <source srcset="assets/img/6204dfa9b26f4a3e3bdf8a6a_Sign Up Image (2).png" type="image/svg">
+          <img src="assets/img/6204dfa9b26f4a3e3bdf8a6a_Sign Up Image (2).png" alt="Image" width="auto" height="auto">
+        </picture><br>
+        <input type="text" pattern="^[^\r\n]+$" placeholder="Your email" id="emailInput" onfocus="clearPlaceholder()" onblur="restorePlaceholder()"></input>
+        <span>Sign Up</span>
+      </div>
+    </div>
+
+
+    <div class="background-color-1">
+      <div class="container" style="padding-bottom: 5%;">
+
+        <div id="load-on-scroll-14" class="footer load-on-scroll nonVisible">
+          <div class="footer-grid1">
+            <picture>
+              <source srcset="assets/img/61d6dadcc329e90e7ba797af_Black Logo.svg" type="image/svg">
+              <img src="assets/img/61d6dadcc329e90e7ba797af_Black Logo.svg" alt="Image"  width="auto" height="auto">
+              <p>Sign up for texts to be notified about our best offer on the perfect gifts</p>
+            </picture>
+          </div>
+
+          <div class="footer-grid2"> 
+            <h1>All products</h1><br>
+            <span>
+              Phones<br><br>
+              Watch<br><br>
+              Tablet<br><br>
+              Laptops
+            </span>
+          </div>
+          <div class="footer-grid3"> 
+            <h1>Company</h1><br>
+            <span>
+              About<br><br>
+              Support
+            </span>
+          </div>
+          <div class="footer-grid4"> 
+            <h1>Support</h1><br>
+            <span>
+              Style Guide<br><br>
+              Licensing<br><br>
+              Change Log<br><br>
+              Contact
+            </span>
+          </div>
+          <div class="footer-grid5">
+            <h1>Follow Us</h1><br>
+            <span>
+              Instagram<br><br>
+              Facebook<br><br>
+              LinkedIn<br><br>
+              Youtube
+            </span> 
+          </div>
+          </div> 
+
+          
+          <hr id="load-on-scroll-15" class="end load-on-scroll nonVisible">
+
+
+
+      </div>
+
+
+
+    
+    </div>
+  </div>
+</div>
+
+
+
+<script src="assets/script.js"></script>
+</body>
+</html>
+
